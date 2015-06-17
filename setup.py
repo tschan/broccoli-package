@@ -8,4 +8,7 @@ setup(name='broccoli',
       author_email='tschan@bla.de',
       license='MIT',
       packages=['broccoli'],
-      zip_safe=False)
+      zip_safe=False,
+      package_data={
+        'broccoli': ['_broccoli_intern.so', 'libbroccoli.a', 'libbroccoli.so.5']
+      })
