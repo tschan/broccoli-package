@@ -128,6 +128,10 @@ def bro_event_queue_length(*args):
   return _broccoli_intern.bro_event_queue_length(*args)
 bro_event_queue_length = _broccoli_intern.bro_event_queue_length
 
+def bro_event_queue_flush(*args):
+  return _broccoli_intern.bro_event_queue_flush(*args)
+bro_event_queue_flush = _broccoli_intern.bro_event_queue_flush
+
 def bro_event_new(*args):
   return _broccoli_intern.bro_event_new(*args)
 bro_event_new = _broccoli_intern.bro_event_new

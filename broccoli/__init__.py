@@ -35,6 +35,12 @@ class Connection:
         bro_conn_process_input(self.bc);
         return bro_event_queue_length(self.bc) > 0
 
+    # Try to send as many events as possible.
+    # Returns true if the send queue is non-empty.
+    def flushQueue(self):
+        bro_event_queue_flush(self.bc);
+        return bro_event_queue_length(self.bc) > 0
+
     def connAlive(self):
         if bro_conn_alive(self.bc) == 1:
             return True

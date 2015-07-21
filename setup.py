@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='broccoli',
-      version='0.1',
+      version='0.2',
       description='Bro Communication Library',
       url='http://github.com/tschan/broccoli-package',
       author='tschan',
